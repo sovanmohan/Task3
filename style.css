@@ -1,0 +1,74 @@
+body {
+	background-color: #b2d8d8;
+}
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+	animation: fade-in 1s;
+}
+
+.board {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	border: 3px solid #333;
+	animation: slide-in 1s;
+}
+
+.cell {
+	box-sizing: border-box;
+	width: 100px;
+	height: 100px;
+	font-size: 50px;
+	text-align: center;
+	line-height: 100px;
+	cursor: pointer;
+	background-color: #ccc;
+	animation: fade-in 1s;
+}
+
+.cell:hover {
+	background-color: #ddd;
+}
+
+.result {
+	font-size: 30px;
+	margin-top: 20px;
+	animation: fade-in 1s;
+}
+
+.reset {
+	font-size: 20px;
+	margin-top: 20px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	animation: fade-in 1s;
+}
+
+.reset:hover {
+	background-color: #555;
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(-200%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
